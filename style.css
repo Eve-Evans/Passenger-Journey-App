@@ -1025,3 +1025,9 @@ input[type="time"]#plannedArrivalInput {
         box-sizing: border-box;
     }
 }
+/* Match the planned time box height to the other inputs */
+input[type="time"]#plannedArrivalInput {
+    padding: 14px;
+    min-height: 49px;
+    height: 49px;
+}

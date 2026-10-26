@@ -959,3 +959,33 @@ body {
         font-size: 16px;
     }
 }
+
+/* Fix planned arrival time input overflowing on iPhone */
+#plannedArrivalInput {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Prevent the form and its children from overflowing */
+#journeyForm,
+#journeyForm * {
+    box-sizing: border-box;
+}
+
+#journeyForm {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+#journeyForm input {
+    min-width: 0;
+    max-width: 100%;
+}
